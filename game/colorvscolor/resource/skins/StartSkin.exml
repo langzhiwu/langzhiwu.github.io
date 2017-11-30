@@ -1,0 +1,5 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="StartSkin" width="1080" height="1920" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<e:Rect left="0" right="0" fillColor="0xFFFFFF" y="20" top="0" bottom="0" x="20"/>
+	<e:Image id="img_logo" source="sleep_png" horizontalCenter="0" verticalCenter="-153"/>
+</e:Skin>

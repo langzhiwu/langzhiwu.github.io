@@ -1,0 +1,87 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>天天数钱</title>
+    <meta name="viewport"
+          content="width=device-width,initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no,target-densitydpi=device-dpi"/>
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+
+    <meta name="full-screen" content="true"/>
+    <meta name="screen-orientation" content="portrait"/>
+    <meta name="x5-fullscreen" content="true"/>
+    <meta name="360-fullscreen" content="true"/>
+
+    <style>
+        body {
+            text-align: center;
+            background: #000000;
+            padding: 0;
+            border: 0;
+            margin: 0;
+            height: 100%;
+        }
+        html {
+            -ms-touch-action: none; /* Direct all pointer events to JavaScript code. */
+            overflow: hidden;
+        }
+        div, canvas {
+            display:block;
+            position:absolute;
+            margin: 0 auto;
+            padding: 0;
+            border: 0;
+        }
+		.sbgshow{display:block;position:fixed;top:0;left:0;width:100%;height:100%;text-align:center;color:#fff;font-size:30px;line-height:1.7em;background:rgba(0,0,0,0.85);}
+        .sbg{display:none;position:fixed;top:0;left:0;width:100%;height:100%;text-align:center;color:#fff;font-size:26px;line-height:1.7em;background:rgba(0,0,0,0.85);}
+    </style>
+</head>
+<body>
+<div style="position:relative;" id="gameDiv"></div>
+<div id="sbg" class="sbg" onclick="hiddenMe()">
+    <div class="arron"></div>
+    <p id="msg">请点击右上角<br />点击【分享到朋友圈】<br />大家一起来数钱！</p>
+</div>
+<script>var document_class = "Main";</script><!--这部分内容在编译时会被替换，要修改文档类，请到工程目录下的egretProperties.json内编辑。-->
+<script src="launcher/egret_require.js"></script>
+<script src="launcher/egret_loader.js"></script>
+<script src="launcher/game-min.js"></script>
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- 梦想小屋 -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-3505532156938691"
+     data-ad-slot="4132713962"
+     data-ad-format="auto"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+<script>
+window.shareData = {
+        "imgUrl": "http://1251001823.cdn.myqcloud.com/1251001823/wechat/mao80.jpg",
+        "timeLineLink": "http://1251001823.cdn.myqcloud.com/1251001823/wechat/sjm/launcher",
+        "tTitle": "我的梦想是天天数钱数到手抽筋！",
+        "tContent": "在尽可能短的时间内算出界面上的钱数。并选择相对应按钮。"
+    };
+
+    function hiddenMe(){
+        document.getElementById("sbg").className="sbg";
+    }
+
+    function share(n , m){
+        if(m == 0){
+            document.title = window.shareData.tTitle = "我的梦想是天天数钱数到手抽筋！！"
+        }
+        if(m == 1){
+            document.title = window.shareData.tTitle = "我的记录是"+n+"元，谁敢挑战我！";
+        }
+        if(m == 2){
+            document.title = window.shareData.tTitle = "实在没人可以打破我的记录，哼。"
+        }
+        document.getElementById("sbg").className="sbgshow";
+    }
+    egret_h5.startGame();
+</script>
+<script type="text/javascript">var cnzz_protocol = (("https:" == document.location.protocol) ? " https://" : " http://");document.write(unescape("%3Cspan id='cnzz_stat_icon_1253253639'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s4.cnzz.com/z_stat.php%3Fid%3D1253253639%26show%3Dpic' type='text/javascript'%3E%3C/script%3E"));</script>
+</body>
+</html>
