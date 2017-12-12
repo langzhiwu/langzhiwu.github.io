@@ -1,0 +1,17 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="GameSceneSkin" width="1280" height="720" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:ns1="*">
+	<e:Image width="1280" height="580" horizontalCenter="0" source="l1b_jpg" bottom="0" locked="true"/>
+	<e:Image id="ship_bg1" source="s7_png" y="0" anchorOffsetX="72" locked="true"/>
+	<ns1:Ship id="ship1" skinName="ShipSkin" y="110" anchorOffsetX="40"/>
+	<e:Image id="myImg1" source="monster1_png" y="0" anchorOffsetX="45"/>
+	<e:Image id="ship_bg2" source="s7_png" y="0" anchorOffsetX="72" locked="true"/>
+	<ns1:Ship id="ship2" skinName="ShipSkin" y="110" anchorOffsetX="40"/>
+	<e:Image id="myImg2" source="monster1_png" y="0" anchorOffsetX="45"/>
+	<e:Label id="score_txt" text="+999" x="293" y="100" textColor="0xFF0000" bold="true" fontFamily="Comic Sans MS" width="81"/>
+	<e:Label id="total_score_txt" text="0" horizontalCenter="-401" y="35" width="109" bold="true" textColor="0xFF0000" verticalAlign="middle" textAlign="center"/>
+	<e:Label text="总分" horizontalCenter="-495" y="35" textColor="0xFF0000" bold="true"/>
+	<e:Label id="total_score_txt2" text="0" horizontalCenter="495" y="35" width="109" bold="true" textColor="0xFF0000" verticalAlign="middle" textAlign="center"/>
+	<e:Label text="总分" horizontalCenter="401" y="35" textColor="0xFF0000" bold="true"/>
+	<e:Label id="score_txt2" text="+999" x="933" y="100" textColor="0xFF0000" bold="true" fontFamily="Comic Sans MS" width="81"/>
+	<e:Label text="30" id="timeLab" horizontalCenter="0" y="35" textColor="0xFF0000" bold="true" size="70"/>
+</e:Skin>
